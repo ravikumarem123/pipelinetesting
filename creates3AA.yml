@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Creating Resource in another account
+
+Resources:
+  MyEC2Instance:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: "https://ownbukt.s3.ap-south-1.amazonaws.com/creates.yml"
+      Parameters:
+        MyBucketName: "aaaaaejhjsdn123jhdfgsdfsdhfhdsvfh5464owl"
